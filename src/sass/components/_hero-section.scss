@@ -1,0 +1,170 @@
+.c-hero-section {
+  &_slider {
+
+    &-item {
+      position: relative;
+      max-height: 812px;
+      @include media(tablet) {
+        max-height: 510px;
+      }
+      @include media(mobile) {
+
+      }
+
+      img {
+        object-fit: cover;
+        max-height: 1100px;
+        height: 100%;
+        width: 100%;
+
+      }
+    }
+
+    &-text {
+      position: absolute;
+      right: 380px;
+      top: 200px;
+      max-width: 480px;
+      width: 100%;
+      @include media(tablet) {
+        right: 100px;
+        top: 60px;
+      }
+      @include media(mobile) {
+        max-width: 100%;
+        text-align: center;
+        left: 0;
+        top: 15px;
+      }
+
+
+      h4 {
+        letter-spacing: 3.09px;
+        font-size: 37px;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        @include media(tablet) {
+          font-size: 30px;
+        }
+        @include media(mobile) {
+          font-size: 14px;
+        }
+      }
+
+      h1 {
+        font-size: 69px;
+        letter-spacing: 0.94px;
+        line-height: 75.98px;
+        font-family: $secondary-font;
+        margin: 0;
+        padding: 0;
+        @include media(tablet) {
+          font-size: 60px;
+          line-height: 60px;
+        }
+        @include media(mobile) {
+          font-size: 16px;
+          line-height: 35px;
+        }
+      }
+
+      p {
+        line-height: 32.05px;
+        margin-bottom: 33px;
+        @include media(tablet) {
+          font-size: 16px;
+        }
+        @include media(mobile) {
+          font-size: 12px;
+          line-height: 25px;
+          margin-bottom: 25px;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 20px;
+    list-style-type: none;
+
+    li {
+      margin: 0 0.25rem;
+    }
+
+    button {
+      display: block;
+      width: .8rem;
+      height: .8rem;
+      padding: 0;
+      outline: none;
+      border: none;
+      border-radius: 100%;
+      background-color: #333333;
+      cursor: pointer;
+      text-indent: -9999px;
+    }
+
+    li.slick-active button {
+      background-color: $hover-color;
+    }
+
+  }
+
+  &_icons {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1260px;
+    padding-bottom: 73px;
+    border-bottom: 1px solid #333333;
+    margin: 0 auto;
+    @include media(tablet) {
+      margin-top: 40px;
+    }
+    @include media(mobile) {
+      flex-direction: column;
+    }
+
+
+    &-item {
+      text-align: center;
+      max-width: 244px;
+      width: 100%;
+      opacity: 0;
+      @include media(mobile) {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      h4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 25px;
+        @include media(tablet) {
+          font-size: 20px;
+        }
+        @include media(mobile) {
+          font-size: 25px;
+        }
+      }
+
+      p {
+        margin: 0;
+        @include media(tablet) {
+          font-size: 14px;
+        }
+        @include media(mobile) {
+          font-size: 19px;
+          max-width: 260px;
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

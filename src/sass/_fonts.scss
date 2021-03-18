@@ -1,0 +1,36 @@
+// Segoe UI font
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../fonts/Segoe-UI/SegoeUI.ttf'),
+  url('../fonts/Segoe-UI/SegoeUI.ttf') format('ttf');
+  src: url('../fonts/Segoe-UI/SegoeUI.woff'),
+  url('../fonts/Segoe-UI/SegoeUI.woff') format('woff');
+  src: url('../fonts/Segoe-UI/SegoeUI.eot'),
+  url('../fonts/Segoe-UI/SegoeUI.eot') format('eot');
+
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+// Segoe UI Black font
+
+@font-face {
+  font-family: 'Segoe UI Black';
+  src: url('../fonts/Segoe-UI/10395.ttf'),
+  url('../fonts/Segoe-UI/10395.ttf') format('ttf');
+}
+
+//Clear Sans
+@font-face {
+  font-family: 'Clear Sans';
+  src: url('../fonts/ClearSans/ClearSansMedium/ClearSansMedium.ttf'),
+  url('../fonts/ClearSans/ClearSansMedium/ClearSansMedium.ttf') format('ttf');
+  src: url('../fonts/ClearSans/ClearSansMedium/ClearSansMedium.woff'),
+  url('../fonts/ClearSans/ClearSansMedium/ClearSansMedium.woff') format('woff');
+  src: url('../fonts/ClearSans/ClearSansMedium/ClearSansMedium.eot'),
+  url('../fonts/ClearSans/ClearSansMedium/ClearSansMedium.eot') format('eot');
+
+  font-weight: normal;
+}

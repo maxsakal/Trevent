@@ -1,0 +1,56 @@
+.c-client-section {
+  margin-top: 100px;
+  padding: 60px 0;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  position: relative;
+  @include media(mobile) {
+    margin-top: 50px;
+  }
+
+  &_slider {
+    div {
+      margin: 10px;
+      position: relative;
+      text-align: center;
+    }
+
+
+  }
+
+  h4 {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 47px;
+    margin-top: 0;
+    font-size: 37px;
+    letter-spacing: 3.09px;
+    @include media(mobile) {
+      font-size: 25px;
+    }
+  }
+
+
+  .slick-track {
+    align-items: center;
+    display: flex;
+  }
+
+  .slick-slider {
+    display: flex;
+
+    .slick-prev, .slick-next {
+      background: none;
+      color: #e6e6e6;
+      font-size: 35px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      @include media(mobile) {
+        display: none;
+      }
+    }
+  }
+
+
+}

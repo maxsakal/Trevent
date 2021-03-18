@@ -1,0 +1,92 @@
+body {
+
+  @include media(tablet-up) {
+    margin: 0;
+  }
+
+  @include media(tablet) {
+    margin: 0;
+  }
+
+  @include media(tablet-only) {
+    margin: 0;
+  }
+
+  @include media(mobile-up) {
+    margin: 0;
+  }
+
+  @include media(mobile) {
+    margin: 0;
+  }
+
+}
+
+body {
+  font-family: $primary-font;
+  font-size: $text-size;
+  color: $text-color;
+  background: #000;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+.container {
+  max-width: 1426px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.primary-btn {
+  min-width: 172px;
+  min-height: 43px;
+  background: $hover-color;
+  border: none;
+  color: $text-color;
+  font-size: 18px;
+  letter-spacing: 0.15px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background: #811913;
+  }
+
+  @include media(mobile) {
+    width: 100%;
+  }
+  @include media(mobile) {
+    min-height: 30px;
+    font-size: 14px;
+  }
+}
+
+.toTop {
+  background-image: url('../images/icons/icon-scroll-arrow.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 52px;
+  right: 150px;
+  cursor: pointer;
+  display: none;
+  @include media(tablet) {
+    right: 50px;
+  }
+
+}

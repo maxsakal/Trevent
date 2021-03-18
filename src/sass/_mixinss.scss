@@ -1,0 +1,36 @@
+@mixin media($media) {
+  @if $media == laptop {
+    @media (max-width: $laptop-breakpoint) {
+      @content;
+    }
+  } @else if $media == laptop-up {
+    @media (min-width: $laptop-breakpoint + 1) {
+      @content;
+    }
+  } @else if $media == laptop-only {
+    @media (max-width: $laptop-breakpoint) and (min-width: $tablet-breakpoint + 1) {
+      @content;
+    }
+  }
+  @if $media == tablet {
+    @media (max-width: $tablet-breakpoint) {
+      @content;
+    }
+  } @else if $media == tablet-up {
+    @media (min-width: $tablet-breakpoint + 1) {
+      @content;
+    }
+  } @else if $media == tablet-only {
+    @media (max-width: $tablet-breakpoint) and (min-width: $mobile-breakpoint + 1) {
+      @content;
+    }
+  } @else if $media == mobile {
+    @media (max-width: $mobile-breakpoint) {
+      @content;
+    }
+  } @else if $media == mobile-up {
+    @media (min-width: $mobile-breakpoint + 1) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@@include('./partials/head.html', { "bodyClass": 'p-main-page' })
+
+<div id="my-page">
+    @@include('./partials/header.html')
+    <section class="c-hero-section">
+        @@include('./partials/hero-slider.html')
+        @@include('./partials/hero-icons.html')
+    </section>
+
+    <section
+            class="c-products-section"
+            style="background-image: url(./images/bg/product-bg.png)"
+    >
+        <div class="container">@@include('./partials/products-section.html')</div>
+    </section>
+    <!-- /.products-section -->
+    <section class="с-client-section">
+        <div class="container">@@include('./partials/client-section.html')</div>
+    </section>
+    <!-- /.client-section -->
+    <footer class="footer">@@include('./partials/footer-main-page.html')</footer>
+</div>
+<div class="toTop animated fadeInRight"></div>
+@@include('./partials/footer.html')
